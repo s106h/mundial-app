@@ -9,101 +9,31 @@ export default function OrganizadorGrupos() {
   };
 
   const equiposIniciales = [
-    {
-      nombre: "Argentina",
-      bandera: "https://flagcdn.com/w320/ar.png",
-    },
-    {
-      nombre: "Brazil",
-      bandera: "https://flagcdn.com/w320/br.png",
-    },
-    {
-      nombre: "España",
-      bandera: "https://flagcdn.com/w320/es.png",
-    },
-    {
-      nombre: "Croacia",
-      bandera: "https://flagcdn.com/w320/hr.png",
-    },
-    {
-      nombre: "Alemania",
-      bandera: "https://flagcdn.com/w320/de.png",
-    },
-    {
-      nombre: "Jamaica",
-      bandera: "https://flagcdn.com/w320/jm.png",
-    },
-    {
-      nombre: "Noruega",
-      bandera: "https://flagcdn.com/w320/no.png",
-    },
-    {
-      nombre: "Marruecos",
-      bandera: "https://flagcdn.com/w320/ma.png",
-    },
-    {
-      nombre: "Belgica",
-      bandera: "https://flagcdn.com/w320/be.png",
-    },
-    {
-      nombre: "Korea",
-      bandera: "https://flagcdn.com/w320/kr.png",
-    },
-    {
-      nombre: "Japon",
-      bandera: "https://flagcdn.com/w320/jp.png",
-    },
-    {
-      nombre: "Uruguay",
-      bandera: "https://flagcdn.com/w320/uy.png",
-    },
-    {
-      nombre: "Italia",
-      bandera: "https://flagcdn.com/w320/it.png",
-    },
-    {
-      nombre: "EUA",
-      bandera: "https://flagcdn.com/w320/us.png",
-    },
-    {
-      nombre: "Canada",
-      bandera: "https://flagcdn.com/w320/ca.png",
-    },
-    {
-      nombre: "Suiza",
-      bandera: "https://flagcdn.com/w320/ch.png",
-    },
-    {
-      nombre: "Suecia",
-      bandera: "https://flagcdn.com/w320/se.png",
-    },
-    {
-      nombre: "Inglaterra",
-      bandera: "https://flagcdn.com/w320/gb.png",
-    },
-    {
-      nombre: "Mexico",
-      bandera: "https://flagcdn.com/w320/mx.png",
-    },
-    {
-      nombre: "Portugal",
-      bandera: "https://flagcdn.com/w320/pt.png",
-    },
-    {
-      nombre: "Colombia",
-      bandera: "https://flagcdn.com/w320/co.png",
-    },
-    {
-      nombre: "Ecuador",
-      bandera: "https://flagcdn.com/w320/ec.png",
-    },
-    {
-      nombre: "Holanda",
-      bandera: "https://flagcdn.com/w320/nl.png",
-    },
-    {
-      nombre: "Francia",
-      ba
+    { nombre: "Argentina", bandera: "https://flagcdn.com/w320/ar.png" },
+    { nombre: "Brazil", bandera: "https://flagcdn.com/w320/br.png" },
+    { nombre: "España", bandera: "https://flagcdn.com/w320/es.png" },
+    { nombre: "Croacia", bandera: "https://flagcdn.com/w320/hr.png" },
+    { nombre: "Alemania", bandera: "https://flagcdn.com/w320/de.png" },
+    { nombre: "Jamaica", bandera: "https://flagcdn.com/w320/jm.png" },
+    { nombre: "Noruega", bandera: "https://flagcdn.com/w320/no.png" },
+    { nombre: "Marruecos", bandera: "https://flagcdn.com/w320/ma.png" },
+    { nombre: "Belgica", bandera: "https://flagcdn.com/w320/be.png" },
+    { nombre: "Korea", bandera: "https://flagcdn.com/w320/kr.png" },
+    { nombre: "Japon", bandera: "https://flagcdn.com/w320/jp.png" },
+    { nombre: "Uruguay", bandera: "https://flagcdn.com/w320/uy.png" },
+    { nombre: "Italia", bandera: "https://flagcdn.com/w320/it.png" },
+    { nombre: "EUA", bandera: "https://flagcdn.com/w320/us.png" },
+    { nombre: "Canada", bandera: "https://flagcdn.com/w320/ca.png" },
+    { nombre: "Suiza", bandera: "https://flagcdn.com/w320/ch.png" },
+    { nombre: "Suecia", bandera: "https://flagcdn.com/w320/se.png" },
+    { nombre: "Inglaterra", bandera: "https://flagcdn.com/w320/gb.png" },
+    { nombre: "Mexico", bandera: "https://flagcdn.com/w320/mx.png" },
+    { nombre: "Portugal", bandera: "https://flagcdn.com/w320/pt.png" },
+    { nombre: "Colombia", bandera: "https://flagcdn.com/w320/co.png" },
+    { nombre: "Ecuador", bandera: "https://flagcdn.com/w320/ec.png" },
+    { nombre: "Holanda", bandera: "https://flagcdn.com/w320/nl.png" },
+    { nombre: "Francia", bandera: "https://flagcdn.com/w320/fr.png" },
+  ];
 
   const [grupos, setGrupos] = useState(gruposIniciales);
   const [equiposDisponibles, setEquiposDisponibles] = useState(equiposIniciales);
@@ -144,7 +74,7 @@ export default function OrganizadorGrupos() {
                 Sistema realizado por MGSports
               </p>
               <p className="text-sm text-zinc-500">
-                Espacio reservado para el logotipo oficial
+                S.H.L
               </p>
             </div>
           </div>
