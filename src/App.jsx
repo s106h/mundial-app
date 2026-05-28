@@ -14,23 +14,75 @@ export default function OrganizadorGrupos() {
       bandera: "https://flagcdn.com/w320/ar.png",
     },
     {
-      nombre: "Brasil",
+      nombre: "Brazil",
       bandera: "https://flagcdn.com/w320/br.png",
-    },
-    {
-      nombre: "Francia",
-      bandera: "https://flagcdn.com/w320/fr.png",
-    },
-    {
-      nombre: "Alemania",
-      bandera: "https://flagcdn.com/w320/de.png",
     },
     {
       nombre: "España",
       bandera: "https://flagcdn.com/w320/es.png",
     },
     {
-      nombre: "México",
+      nombre: "Croacia",
+      bandera: "https://flagcdn.com/w320/hr.png",
+    },
+    {
+      nombre: "Alemania",
+      bandera: "https://flagcdn.com/w320/de.png",
+    },
+    {
+      nombre: "Jamaica",
+      bandera: "https://flagcdn.com/w320/jm.png",
+    },
+    {
+      nombre: "Noruega",
+      bandera: "https://flagcdn.com/w320/no.png",
+    },
+    {
+      nombre: "Marruecos",
+      bandera: "https://flagcdn.com/w320/ma.png",
+    },
+    {
+      nombre: "Belgica",
+      bandera: "https://flagcdn.com/w320/be.png",
+    },
+    {
+      nombre: "Korea",
+      bandera: "https://flagcdn.com/w320/kr.png",
+    },
+    {
+      nombre: "Japon",
+      bandera: "https://flagcdn.com/w320/jp.png",
+    },
+    {
+      nombre: "Uruguay",
+      bandera: "https://flagcdn.com/w320/uy.png",
+    },
+    {
+      nombre: "Italia",
+      bandera: "https://flagcdn.com/w320/it.png",
+    },
+    {
+      nombre: "EUA",
+      bandera: "https://flagcdn.com/w320/us.png",
+    },
+    {
+      nombre: "Canada",
+      bandera: "https://flagcdn.com/w320/ca.png",
+    },
+    {
+      nombre: "Suiza",
+      bandera: "https://flagcdn.com/w320/ch.png",
+    },
+    {
+      nombre: "Suecia",
+      bandera: "https://flagcdn.com/w320/se.png",
+    },
+    {
+      nombre: "Inglaterra",
+      bandera: "https://flagcdn.com/w320/gb.png",
+    },
+    {
+      nombre: "Mexico",
       bandera: "https://flagcdn.com/w320/mx.png",
     },
     {
@@ -38,42 +90,20 @@ export default function OrganizadorGrupos() {
       bandera: "https://flagcdn.com/w320/pt.png",
     },
     {
-      nombre: "Países Bajos",
-      bandera: "https://flagcdn.com/w320/nl.png",
-    },
-    {
-      nombre: "Uruguay",
-      bandera: "https://flagcdn.com/w320/uy.png",
-    },
-    {
-      nombre: "Croacia",
-      bandera: "https://flagcdn.com/w320/hr.png",
-    },
-    {
-      nombre: "Japón",
-      bandera: "https://flagcdn.com/w320/jp.png",
-    },
-    {
-      nombre: "Estados Unidos",
-      bandera: "https://flagcdn.com/w320/us.png",
-    },
-    {
       nombre: "Colombia",
       bandera: "https://flagcdn.com/w320/co.png",
     },
     {
-      nombre: "Bélgica",
-      bandera: "https://flagcdn.com/w320/be.png",
+      nombre: "Ecuador",
+      bandera: "https://flagcdn.com/w320/ec.png",
     },
     {
-      nombre: "Inglaterra",
-      bandera: "https://flagcdn.com/w320/gb.png",
+      nombre: "Holanda",
+      bandera: "https://flagcdn.com/w320/nl.png",
     },
     {
-      nombre: "Italia",
-      bandera: "https://flagcdn.com/w320/it.png",
-    },
-  ];
+      nombre: "Francia",
+      ba
 
   const [grupos, setGrupos] = useState(gruposIniciales);
   const [equiposDisponibles, setEquiposDisponibles] = useState(equiposIniciales);
@@ -208,7 +238,7 @@ export default function OrganizadorGrupos() {
         </div>
 
         <div className="mt-10 text-center text-zinc-400 text-sm">
-          MG SPORTS les da la bienvenida a nuestro mundial
+          MG SPORTS les da la bienvenida a nuestro mundial.
         </div>
       </div>
     </div>
