@@ -73,9 +73,6 @@ export default function OrganizadorGrupos() {
               <p className="font-semibold text-zinc-800">
                 Sistema realizado por MGSports
               </p>
-              <p className="text-sm text-zinc-500">
-                Espacio reservado para el logotipo oficial
-              </p>
             </div>
           </div>
         </div>
