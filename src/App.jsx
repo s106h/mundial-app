@@ -46,7 +46,7 @@ export default function OrganizadorGrupos() {
   const handleDropEquipo = (grupoDestino) => {
     if (!dragItem) return;
 
-    if (grupos[grupoDestino].length >= 4) return;
+    if (grupos[grupoDestino].length >= 6) return;
 
     const nuevosGrupos = { ...grupos };
     const nuevosDisponibles = [...equiposDisponibles];
@@ -74,7 +74,7 @@ export default function OrganizadorGrupos() {
                 Sistema realizado por MGSports
               </p>
               <p className="text-sm text-zinc-500">
-                S.H.L
+                Espacio reservado para el logotipo oficial
               </p>
             </div>
           </div>
@@ -139,7 +139,7 @@ export default function OrganizadorGrupos() {
               <div
                 onDragOver={(e) => e.preventDefault()}
                 onDrop={() => handleDropEquipo(grupo)}
-                className="grid grid-cols-2 gap-4 min-h-[220px] bg-zinc-50 rounded-2xl p-4 border-2 border-dashed border-zinc-300"
+                className="grid grid-cols-2 gap-4 min-h-[320px] bg-zinc-50 rounded-2xl p-4 border-2 border-dashed border-zinc-300"
               >
                 {espacios.length === 0 && (
                   <div className="col-span-2 flex items-center justify-center text-zinc-400 text-sm h-full">
