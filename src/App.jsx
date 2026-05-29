@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "./assets/logo.png";
 
 export default function OrganizadorGrupos() {
   const gruposIniciales = {
@@ -37,8 +36,7 @@ export default function OrganizadorGrupos() {
   ];
 
   const [grupos, setGrupos] = useState(gruposIniciales);
-  const [equiposDisponibles, setEquiposDisponibles] =
-    useState(equiposIniciales);
+  const [equiposDisponibles, setEquiposDisponibles] = useState(equiposIniciales);
   const [dragItem, setDragItem] = useState(null);
 
   const handleDragStart = (grupo, index) => {
@@ -66,30 +64,19 @@ export default function OrganizadorGrupos() {
   return (
     <div className="min-h-screen bg-zinc-100 flex items-center justify-center p-6">
       <div className="w-full max-w-6xl">
-
-        {/* HEADER */}
         <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-4 bg-white px-6 py-4 rounded-2xl shadow-lg border border-zinc-200">
-
-            <img
-              src={logo}
-              alt="MG Sports"
-              className="w-16 h-16 object-contain"
-            />
-
+          <div className="inline-flex items-center gap-3 bg-white px-6 py-3 rounded-2xl shadow-lg border border-zinc-200">
+            <div className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-white font-bold text-lg">
+              MG
+            </div>
             <div className="text-left">
-              <p className="font-semibold text-zinc-800 text-lg">
+              <p className="font-semibold text-zinc-800">
                 Sistema realizado por MGSports
-              </p>
-
-              <p className="text-sm text-zinc-500">
-                Organizador Oficial del Mundial
               </p>
             </div>
           </div>
         </div>
 
-        {/* EQUIPOS */}
         <div className="bg-white rounded-3xl shadow-xl border border-zinc-200 p-6 mb-10">
           <h2 className="text-2xl font-semibold text-zinc-800 mb-6 text-center">
             Equipos Clasificados
@@ -100,9 +87,7 @@ export default function OrganizadorGrupos() {
               <div
                 key={index}
                 draggable
-                onDragStart={() =>
-                  handleDragStart("disponibles", index)
-                }
+                onDragStart={() => handleDragStart("disponibles", index)}
                 className={`
                   h-20 rounded-2xl border border-zinc-200
                   flex items-center justify-center text-center
@@ -125,7 +110,6 @@ export default function OrganizadorGrupos() {
                     alt={equipo.nombre}
                     className="w-10 h-7 object-cover rounded shadow-sm"
                   />
-
                   <span>{equipo.nombre}</span>
                 </div>
               </div>
@@ -133,7 +117,6 @@ export default function OrganizadorGrupos() {
           </div>
         </div>
 
-        {/* GRUPOS */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {Object.entries(grupos).map(([grupo, espacios]) => (
             <div
@@ -172,7 +155,6 @@ export default function OrganizadorGrupos() {
                         alt={espacio.nombre}
                         className="w-10 h-7 object-cover rounded shadow-sm"
                       />
-
                       <span>{espacio.nombre}</span>
                     </div>
                   </div>
@@ -182,7 +164,6 @@ export default function OrganizadorGrupos() {
           ))}
         </div>
 
-        {/* FOOTER */}
         <div className="mt-10 text-center text-zinc-400 text-sm">
           MG SPORTS les da la bienvenida a nuestro mundial.
         </div>
