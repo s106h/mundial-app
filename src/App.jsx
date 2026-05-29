@@ -71,7 +71,7 @@ export default function OrganizadorGrupos() {
             </div>
             <div className="text-left">
               <p className="font-semibold text-zinc-800">
-                Sistema realizado por MGSports
+                Sistema realizado por MGSPORTS
               </p>
             </div>
           </div>
@@ -165,7 +165,7 @@ export default function OrganizadorGrupos() {
         </div>
 
         <div className="mt-10 text-center text-zinc-400 text-sm">
-          MG SPORTS les da la bienvenida a nuestro mundial.
+          MG SPORTS les da la bienvenida a nuestro mundial
         </div>
       </div>
     </div>
