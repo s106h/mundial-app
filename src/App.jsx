@@ -76,9 +76,9 @@ export default function OrganizadorGrupos() {
         <div className="flex justify-end mb-4">
           <button
             onClick={toggleFullScreen}
-            className="bg-zinc-900 text-white px-5 py-2 rounded-xl shadow hover:bg-zinc-700 transition"
+            className="bg-zinc-900 text-white w-12 h-12 rounded-xl shadow hover:bg-zinc-700 transition flex items-center justify-center text-2xl"
           >
-            Pantalla Completa
+            ⛶
           </button>
         </div>
 
