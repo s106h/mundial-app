@@ -30,7 +30,7 @@ export default function OrganizadorGrupos() {
     { nombre: "Mexico", bandera: "https://flagcdn.com/w320/mx.png" },
     { nombre: "Portugal", bandera: "https://flagcdn.com/w320/pt.png" },
     { nombre: "Colombia", bandera: "https://flagcdn.com/w320/co.png" },
-    { nombre: "Ecuador", bandera: "https://flagcdn.com/w320/ec.png" },
+    { nombre: "Egipto", bandera: "https://flagcdn.com/w320/eg.png" },
     { nombre: "Holanda", bandera: "https://flagcdn.com/w320/nl.png" },
     { nombre: "Francia", bandera: "https://flagcdn.com/w320/fr.png" },
   ];
