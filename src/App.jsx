@@ -90,7 +90,7 @@ export default function OrganizadorGrupos() {
 
             <div className="text-left">
               <p className="font-semibold text-zinc-800">
-                Sistema realizado por MGSPORTS
+                Lalo se la come
               </p>
             </div>
           </div>
