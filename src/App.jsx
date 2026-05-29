@@ -36,7 +36,8 @@ export default function OrganizadorGrupos() {
   ];
 
   const [grupos, setGrupos] = useState(gruposIniciales);
-  const [equiposDisponibles, setEquiposDisponibles] = useState(equiposIniciales);
+  const [equiposDisponibles, setEquiposDisponibles] =
+    useState(equiposIniciales);
   const [dragItem, setDragItem] = useState(null);
 
   const handleDragStart = (grupo, index) => {
@@ -61,14 +62,32 @@ export default function OrganizadorGrupos() {
     setDragItem(null);
   };
 
+  const toggleFullScreen = () => {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen();
+    } else {
+      document.exitFullscreen();
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-zinc-100 flex items-center justify-center p-6">
-      <div className="w-full max-w-6xl">
+    <div className="w-screen min-h-screen bg-zinc-100 p-4 md:p-6">
+      <div className="w-full">
+        <div className="flex justify-end mb-4">
+          <button
+            onClick={toggleFullScreen}
+            className="bg-zinc-900 text-white px-5 py-2 rounded-xl shadow hover:bg-zinc-700 transition"
+          >
+            Pantalla Completa
+          </button>
+        </div>
+
         <div className="text-center mb-10">
           <div className="inline-flex items-center gap-3 bg-white px-6 py-3 rounded-2xl shadow-lg border border-zinc-200">
             <div className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-white font-bold text-lg">
               MG
             </div>
+
             <div className="text-left">
               <p className="font-semibold text-zinc-800">
                 Sistema realizado por MGSPORTS
@@ -82,7 +101,7 @@ export default function OrganizadorGrupos() {
             Equipos Clasificados
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {equiposDisponibles.map((equipo, index) => (
               <div
                 key={index}
@@ -110,6 +129,7 @@ export default function OrganizadorGrupos() {
                     alt={equipo.nombre}
                     className="w-10 h-7 object-cover rounded shadow-sm"
                   />
+
                   <span>{equipo.nombre}</span>
                 </div>
               </div>
@@ -155,6 +175,7 @@ export default function OrganizadorGrupos() {
                         alt={espacio.nombre}
                         className="w-10 h-7 object-cover rounded shadow-sm"
                       />
+
                       <span>{espacio.nombre}</span>
                     </div>
                   </div>
