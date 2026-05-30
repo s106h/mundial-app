@@ -10,7 +10,7 @@ export default function OrganizadorGrupos() {
 
   const equiposIniciales = [
     { nombre: "Argentina", bandera: "https://flagcdn.com/w320/ar.png" },
-    { nombre: "Brazil", bandera: "https://flagcdn.com/w320/br.png" },
+    { nombre: "Brasil", bandera: "https://flagcdn.com/w320/br.png" },
     { nombre: "España", bandera: "https://flagcdn.com/w320/es.png" },
     { nombre: "Croacia", bandera: "https://flagcdn.com/w320/hr.png" },
     { nombre: "Alemania", bandera: "https://flagcdn.com/w320/de.png" },
