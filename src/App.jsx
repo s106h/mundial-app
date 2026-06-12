@@ -4,35 +4,57 @@ export default function OrganizadorGrupos() {
   const gruposIniciales = {
     A: [],
     B: [],
-    C: [],
-    D: [],
   };
 
   const equiposIniciales = [
-    { nombre: "Argentina", bandera: "https://flagcdn.com/w320/ar.png" },
-    { nombre: "Brasil", bandera: "https://flagcdn.com/w320/br.png" },
-    { nombre: "España", bandera: "https://flagcdn.com/w320/es.png" },
-    { nombre: "Croacia", bandera: "https://flagcdn.com/w320/hr.png" },
-    { nombre: "Alemania", bandera: "https://flagcdn.com/w320/de.png" },
-    { nombre: "Jamaica", bandera: "https://flagcdn.com/w320/jm.png" },
-    { nombre: "Noruega", bandera: "https://flagcdn.com/w320/no.png" },
-    { nombre: "Marruecos", bandera: "https://flagcdn.com/w320/ma.png" },
-    { nombre: "Belgica", bandera: "https://flagcdn.com/w320/be.png" },
-    { nombre: "Korea", bandera: "https://flagcdn.com/w320/kr.png" },
-    { nombre: "Japon", bandera: "https://flagcdn.com/w320/jp.png" },
-    { nombre: "Uruguay", bandera: "https://flagcdn.com/w320/uy.png" },
-    { nombre: "Italia", bandera: "https://flagcdn.com/w320/it.png" },
-    { nombre: "EUA", bandera: "https://flagcdn.com/w320/us.png" },
-    { nombre: "Canada", bandera: "https://flagcdn.com/w320/ca.png" },
-    { nombre: "Suiza", bandera: "https://flagcdn.com/w320/ch.png" },
-    { nombre: "Suecia", bandera: "https://flagcdn.com/w320/se.png" },
-    { nombre: "Inglaterra", bandera: "https://flagcdn.com/w320/gb.png" },
-    { nombre: "Mexico", bandera: "https://flagcdn.com/w320/mx.png" },
-    { nombre: "Portugal", bandera: "https://flagcdn.com/w320/pt.png" },
-    { nombre: "Colombia", bandera: "https://flagcdn.com/w320/co.png" },
-    { nombre: "Egipto", bandera: "https://flagcdn.com/w320/eg.png" },
-    { nombre: "Holanda", bandera: "https://flagcdn.com/w320/nl.png" },
-    { nombre: "Francia", bandera: "https://flagcdn.com/w320/fr.png" },
+    {
+      nombre: "Campechanas Japón",
+      bandera: "https://flagcdn.com/w320/jp.png",
+    },
+    {
+      nombre: "Girls United Brasil",
+      bandera: "https://flagcdn.com/w320/br.png",
+    },
+    {
+      nombre: "Amazonas Francia",
+      bandera: "https://flagcdn.com/w320/fr.png",
+    },
+    {
+      nombre: "Tacomate Argentina",
+      bandera: "https://flagcdn.com/w320/ar.png",
+    },
+    {
+      nombre: "Recife México",
+      bandera: "https://flagcdn.com/w320/mx.png",
+    },
+    {
+      nombre: "Cuervas Italia",
+      bandera: "https://flagcdn.com/w320/it.png",
+    },
+    {
+      nombre: "Rucaletas Canadá",
+      bandera: "https://flagcdn.com/w320/ca.png",
+    },
+    {
+      nombre: "Abuelas México",
+      bandera: "https://flagcdn.com/w320/mx.png",
+    },
+    {
+      nombre: "Lobas Inglaterra",
+      bandera: "https://flagcdn.com/w320/gb.png",
+    },
+    {
+      nombre: "Espanta FG España",
+      bandera: "https://flagcdn.com/w320/es.png",
+    },
+    {
+      nombre: "Turbo Curazao",
+      bandera: "https://flagcdn.com/w320/cw.png",
+    },
+    {
+      nombre: "Legends Pop Tour FC Colombia",
+      bandera: "https://flagcdn.com/w320/co.png",
+    },
   ];
 
   const [grupos, setGrupos] = useState(gruposIniciales);
@@ -90,7 +112,7 @@ export default function OrganizadorGrupos() {
 
             <div className="text-left">
               <p className="font-semibold text-zinc-800">
-                Sistema realizado por MGSPORTS
+                Mundial Femenil MG SPORTS
               </p>
             </div>
           </div>
@@ -101,7 +123,7 @@ export default function OrganizadorGrupos() {
             Equipos Clasificados
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {equiposDisponibles.map((equipo, index) => (
               <div
                 key={index}
@@ -137,7 +159,7 @@ export default function OrganizadorGrupos() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {Object.entries(grupos).map(([grupo, espacios]) => (
             <div
               key={grupo}
@@ -149,14 +171,14 @@ export default function OrganizadorGrupos() {
                 </h2>
 
                 <div className="bg-zinc-900 text-white px-4 py-1 rounded-full text-sm font-medium">
-                  {espacios.length} espacios
+                  {espacios.length}/6 equipos
                 </div>
               </div>
 
               <div
                 onDragOver={(e) => e.preventDefault()}
                 onDrop={() => handleDropEquipo(grupo)}
-                className="grid grid-cols-2 gap-4 min-h-[320px] bg-zinc-50 rounded-2xl p-4 border-2 border-dashed border-zinc-300"
+                className="grid grid-cols-2 gap-4 min-h-[420px] bg-zinc-50 rounded-2xl p-4 border-2 border-dashed border-zinc-300"
               >
                 {espacios.length === 0 && (
                   <div className="col-span-2 flex items-center justify-center text-zinc-400 text-sm h-full">
@@ -186,7 +208,7 @@ export default function OrganizadorGrupos() {
         </div>
 
         <div className="mt-10 text-center text-zinc-400 text-sm">
-          MG SPORTS les da la bienvenida a nuestro mundial
+          MG SPORTS les da la bienvenida al Mundial Femenil
         </div>
       </div>
     </div>
