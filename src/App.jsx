@@ -8,51 +8,51 @@ export default function OrganizadorGrupos() {
 
   const equiposIniciales = [
     {
-      nombre: "Campechanas Japón",
+      nombre: "Campechanas",
       bandera: "https://flagcdn.com/w320/jp.png",
     },
     {
-      nombre: "Girls United Brasil",
+      nombre: "Girls United",
       bandera: "https://flagcdn.com/w320/br.png",
     },
     {
-      nombre: "Amazonas Francia",
+      nombre: "Amazonas",
       bandera: "https://flagcdn.com/w320/fr.png",
     },
     {
-      nombre: "Tacomate Argentina",
+      nombre: "Tacomate",
       bandera: "https://flagcdn.com/w320/ar.png",
     },
     {
-      nombre: "Recife México",
+      nombre: "Recife",
       bandera: "https://flagcdn.com/w320/mx.png",
     },
     {
-      nombre: "Cuervas Italia",
+      nombre: "Cuervas",
       bandera: "https://flagcdn.com/w320/it.png",
     },
     {
-      nombre: "Rucaletas Canadá",
+      nombre: "Rucaletas",
       bandera: "https://flagcdn.com/w320/ca.png",
     },
     {
-      nombre: "Abuelas México",
+      nombre: "Abuelas",
       bandera: "https://flagcdn.com/w320/mx.png",
     },
     {
-      nombre: "Lobas Inglaterra",
+      nombre: "Lobas",
       bandera: "https://flagcdn.com/w320/gb.png",
     },
     {
-      nombre: "Espanta FG España",
+      nombre: "Espanta FG",
       bandera: "https://flagcdn.com/w320/es.png",
     },
     {
-      nombre: "Turbo Curazao",
+      nombre: "Turbo",
       bandera: "https://flagcdn.com/w320/cw.png",
     },
     {
-      nombre: "Legends Pop Tour FC Colombia",
+      nombre: "Legends Pop Tour",
       bandera: "https://flagcdn.com/w320/co.png",
     },
   ];
